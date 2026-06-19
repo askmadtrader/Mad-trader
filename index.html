@@ -1,101 +1,73 @@
 Privacy Policy
-
+Effective Date: June 2026
 Last Updated: June 2026
+1. Introduction
+Mad Trader ("the App", "we", "our") is a personal trading compounding planner and trading journal. This Privacy Policy describes exactly what data is collected, by whom, and why — section by section, matching what is actually built into the App.
 
-Mad Trader ("we", "our", or "us") respects your privacy. This Privacy Policy explains how the Mad Trader mobile application collects, uses, stores, and protects information.
+By using Mad Trader, you agree to the terms of this Privacy Policy.
 
-Information We Collect
+2. Your Trading Data
+All data you enter into Mad Trader — capital amounts, P&L, trading plans, journal entries (including strategy notes, emotions, mistakes, and any text you write) — is stored exclusively on your device using a local SQLite database.
 
-Mad Trader may store information entered by users, including:
+This data never leaves your device unless you explicitly tap "Backup to Google Drive" or "Export". We do not run any server, and we cannot see, access, or sell this data — it is never transmitted to us in any form.
 
-- Trading journal entries
-- Trade history
-- Trading targets
-- Notes and comments
-- App settings and preferences
-- Performance analytics
-- Other user-generated trading data
+3. Third-Party Services Used in This App
+Mad Trader uses the following third-party services. Each is listed with exactly what it collects:
 
-This information is used solely to provide app functionality and improve the user experience.
+Google AdMob — Shows banner ads. Collects your advertising ID, device model, OS version, general (non-precise) location from IP address, and ad interaction data, for ad delivery and limited personalisation. Governed by Google's Privacy Policy. You can opt out of personalised ads via Android Settings → Privacy → Ads → "Opt out of Ads Personalisation".
+Firebase Crashlytics — Collects crash logs, stack traces, device model, brand, OS version, and app version when the App crashes or hits an error, so we can fix bugs. Does not collect your trading data, journal text, or any personal identifiers. Governed by Google's Privacy Policy.
+PostHog (product analytics) — Collects anonymous usage events (e.g. "plan created", "journal entry added", "app opened") tied to a random ID generated and stored on your device — not your name, email, or trading figures. Used only to understand which features are used, so we can improve the App. You can request deletion of this anonymous analytics ID at any time (see Section 9).
+Google Sign-In + Google Drive (optional, opt-in only) — If you choose to sign in with Google, we receive your name, email address, and profile photo URL from Google to identify your session. Your trading data is then stored in a private "AppData" folder inside your own Google Drive account, accessible only by Mad Trader and invisible in your normal Drive file list. We cannot access this folder or its contents — only your signed-in device can.
+4. Cloud Backup (Google Drive)
+Cloud backup is entirely opt-in and OFF by default. Nothing is uploaded unless you tap "Sign in with Google" and then trigger a backup.
 
-Google Sign-In
+If you sign in with Google:
 
-If you choose to sign in with Google, Mad Trader may access limited account information such as:
+Your plans, journal entries, journal stats, and app settings are written to a single backup.json file inside Google Drive's hidden AppData folder
+Only Mad Trader (using your Google sign-in) can read or write this file — it does not appear in your regular Google Drive
+The backup is automatically deleted by Google if you uninstall the App
+You can sign out at any time from Settings, which ends the session on this device (your backup file remains in your Drive until you delete it yourself or uninstall)
+5. Advertising
+Free users see banner ads served by Google AdMob on select screens. AdMob may use your advertising ID and device data to show relevant ads. You can reset or limit your advertising ID, and opt out of ad personalisation entirely, via Android Settings → Privacy → Ads.
 
-- Google account identifier
-- Email address
+Mad Trader does not control what AdMob serves and is not responsible for the content of third-party ads.
 
-This information is used only for authentication and cloud backup functionality.
+6. Permissions
+Mad Trader explicitly blocks camera, location, contacts, and microphone access at the app level — these permissions cannot be requested by this App even if a bundled library supports them.
 
-Cloud Backup and Restore
+Permissions actually used:
 
-When cloud backup is enabled, Mad Trader may store encrypted or serialized backup data in your personal Google Drive AppData folder.
+Storage / Files: To save and open local backup JSON files, and to export journal data as Excel or PDF
+Internet: Required for AdMob (ads), Crashlytics (crash reporting), PostHog (anonymous usage analytics), and optional Google Drive backup. Without internet, all core planning and journaling features still work fully offline.
+7. Financial Disclaimer
+Mad Trader is a planning and tracking tool ONLY. It is NOT financial advice, a trading recommendation system, or a guarantee of returns.
 
-Backups may include:
+Compound projections are mathematical simulations only. Past projections do not guarantee future results. Trading in financial markets involves significant risk. You may lose some or all of your capital. Always consult a qualified financial advisor before making trading decisions.
 
-- Trading journals
-- Notes
-- Targets
-- Settings
-- Analytics
-- Other application data
+8. NSE Holiday Data
+The App contains pre-loaded NSE (National Stock Exchange of India) holidays for 2025–2030. This data is embedded in the App and does not require an internet connection.
 
-Backup files stored in Google Drive AppData are private and are not publicly accessible.
+Always verify the official NSE calendar before trading.
 
-Advertising
+9. Your Rights
+You have full control over your data:
 
-Mad Trader may display advertisements using Google AdMob.
+Access: All data is visible within the App at any time
+Export: Export everything as a JSON file via Settings → Export Backup, or your journal as Excel/PDF
+Delete local data: Permanently delete all on-device data via Settings → Reset All Data
+Delete cloud backup: Sign in with Google → delete backup.json from your own Drive, or simply revoke Mad Trader's access at myaccount.google.com/permissions
+Opt out of personalised ads: Android Settings → Privacy → Ads → Opt out of Ads Personalisation
+Delete your anonymous analytics ID: Email us at the address in Section 12 and we will instruct PostHog to delete the corresponding event history
+Sign out of Google: Settings → Cloud Backup → Sign Out, which ends the Google session on this device
+10. Children's Privacy
+Mad Trader is not intended for use by persons under the age of 18. We do not knowingly collect information from children. If you believe a child has used this App and provided personal information, contact us and we will delete it.
 
-Google AdMob may collect certain information, including:
+11. Changes to This Policy
+We may update this Privacy Policy when the App adds, removes, or changes a feature or third-party service. Updates will be reflected in new App versions and the "Last Updated" date above. Continued use after an update constitutes acceptance of the revised policy.
 
-- Device identifiers
-- Advertising identifiers
-- App usage information
+12. Contact
+For privacy questions, data deletion requests, or any other queries, email us at askmadtrader@gmail.com, or use the Contact Support / Report a Bug screens in the App (Settings → Support).
 
-Google's use of information is governed by Google's Privacy Policy.
-
-Crash Reporting and Diagnostics
-
-Mad Trader may use Firebase Crashlytics or similar services to collect anonymous crash reports and diagnostic information.
-
-This information helps improve app stability, reliability, and performance.
-
-Data Sharing
-
-We do not sell, rent, or trade your personal information.
-
-Information may only be shared when required:
-
-- To provide core application functionality
-- To comply with legal obligations
-- To protect the security and integrity of the application
-
-Data Security
-
-We take reasonable measures to protect user information against unauthorized access, disclosure, alteration, or destruction.
-
-However, no method of electronic storage or transmission over the Internet is completely secure, and we cannot guarantee absolute security.
-
-Data Retention
-
-User data remains stored on the device unless deleted by the user.
-
-Cloud backup data remains stored in the user's Google Drive account until removed by the user.
-
-Children's Privacy
-
-Mad Trader is not directed toward children under the age of 13.
-
-We do not knowingly collect personal information from children.
-
-Changes to This Privacy Policy
-
-We may update this Privacy Policy from time to time.
-
-Any updates will be posted on this page with a revised "Last Updated" date.
-
-Contact
-
-If you have any questions regarding this Privacy Policy, please contact:
-
-askmadtrader@gmail.com
+Mad Trader v1.2.4
+Package: com.madtrader.app
+Platform: Android (API 24+)
