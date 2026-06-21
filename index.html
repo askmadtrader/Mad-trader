@@ -5,42 +5,146 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mad Trader — Privacy Policy</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0B1020; color: #E0E8FF; line-height: 1.7; }
-  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
-  .badge { display: inline-block; background: #00C85320; border: 1px solid #00C85340; color: #00C853; padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
-  .badge-warn { display: inline-block; background: #FF980020; border: 1px solid #FF980040; color: #FF9800; padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; margin-bottom: 28px; margin-left: 8px; }
-  h1 { font-size: 32px; font-weight: 800; color: #00E5FF; margin-bottom: 6px; }
-  .meta { color: #5A7099; font-size: 13px; margin-bottom: 20px; }
-  h2 { font-size: 17px; font-weight: 700; color: #FFFFFF; margin: 32px 0 10px; border-bottom: 1px solid #1E2D45; padding-bottom: 8px; }
-  h3 { font-size: 14px; font-weight: 700; color: #00E5FF; margin: 16px 0 6px; }
-  p, li { color: #9BB0CC; font-size: 15px; margin-bottom: 12px; }
-  ul { padding-left: 20px; margin-bottom: 12px; }
+  :root {
+    --bg: #0B1020;
+    --card: #111827;
+    --border: #1F2937;
+    --fg: #FFFFFF;
+    --muted: #9CA3AF;
+    --primary: #00E5FF;
+    --profit: #22C55E;
+    --profit-bg: rgba(34,197,94,0.12);
+    --skipped: #F59E0B;
+    --skipped-bg: rgba(245,158,11,0.12);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 6px;
+  }
+  .dates {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .badge {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .badge.good {
+    background: var(--profit-bg);
+    border-color: rgba(34,197,94,0.4);
+    color: var(--profit);
+  }
+  .badge.warn {
+    background: var(--skipped-bg);
+    border-color: rgba(245,158,11,0.4);
+    color: var(--skipped);
+  }
+  nav.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 28px;
+    font-size: 13.5px;
+  }
+  nav.toc a {
+    color: var(--primary);
+    text-decoration: none;
+    margin-right: 14px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  nav.toc a:hover { text-decoration: underline; }
+  section {
+    border-bottom: 1px solid var(--border);
+    padding: 22px 0;
+    scroll-margin-top: 20px;
+  }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 12px;
+  }
+  h3 {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--fg);
+    margin: 18px 0 4px;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 14.5px;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+  p:last-child { margin-bottom: 0; }
+  ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+    font-size: 14.5px;
+    color: var(--muted);
+  }
   li { margin-bottom: 6px; }
-  .service-block { background: #111827; border: 1px solid #1E2D45; border-radius: 10px; padding: 14px 18px; margin-bottom: 14px; }
-  .service-name { font-size: 14px; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; }
-  .service-meta { font-size: 12px; color: #5A7099; margin-bottom: 8px; }
-  .service-meta span { color: #00C853; margin-right: 12px; }
-  .service-meta span.warn { color: #FF9800; }
-  .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #1E2D45; color: #5A7099; font-size: 12px; text-align: center; }
-  strong { color: #E0E8FF; }
-  a { color: #00E5FF; }
-  .toc { background: #111827; border: 1px solid #1E2D45; border-radius: 10px; padding: 16px 20px; margin-bottom: 32px; }
-  .toc p { font-size: 13px; color: #5A7099; margin-bottom: 6px; }
-  .toc a { display: block; font-size: 14px; color: #9BB0CC; margin-bottom: 4px; text-decoration: none; }
-  .toc a:hover { color: #00E5FF; }
+  strong { color: var(--fg); }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer {
+    border-top: 1px solid var(--border);
+    margin-top: 16px;
+    padding-top: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+  }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="wrap">
+
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective Date: June 2026 &nbsp;|&nbsp; Last Updated: June 2026</p>
+  <div class="dates">Effective Date: June 2026<br>Last Updated: June 2026</div>
 
-  <div class="badge">✓ Your trading data stays on your device</div>
-  <div class="badge-warn">⚠ Third-party SDKs in use or planned — see Section 4</div>
+  <div class="badges">
+    <span class="badge good">✓ Your trading data stays on your device</span>
+    <span class="badge warn">⚠ Third-party SDKs in use or planned — see Section 4</span>
+  </div>
 
-  <div class="toc">
-    <p>Contents</p>
+  <nav class="toc">
     <a href="#s1">1. Introduction</a>
     <a href="#s2">2. What data Mad Trader collects</a>
     <a href="#s3">3. Your trading data — local storage</a>
@@ -52,34 +156,38 @@
     <a href="#s9">9. Your rights</a>
     <a href="#s10">10. Changes to this policy</a>
     <a href="#s11">11. Contact</a>
-  </div>
+  </nav>
 
-  <h2 id="s1">1. Introduction</h2>
-  <p>Mad Trader ("the App", "we", "our") is a personal trading compounding planner and journal developed for individual use. This Privacy Policy describes exactly what data is collected, by whom, and how it is used. By using Mad Trader, you agree to the terms of this Privacy Policy.</p>
+  <section id="s1">
+    <h2>1. Introduction</h2>
+    <p>Mad Trader ("the App", "we", "our") is a personal trading compounding planner and journal developed for individual use. This Privacy Policy describes exactly what data is collected, by whom, and how it is used. By using Mad Trader, you agree to the terms of this Privacy Policy.</p>
+  </section>
 
-  <h2 id="s2">2. What data Mad Trader collects</h2>
-  <p>Mad Trader itself does <strong>NOT</strong> collect, store, or transmit any of your personal or financial data to our servers. We have no servers.</p>
-  <p>However, the App integrates third-party SDKs (Firebase Crashlytics and PostHog Analytics now, and Google AdMob in a future update) that collect limited technical data as described in Section 4. This is standard for free apps and is disclosed in full below.</p>
+  <section id="s2">
+    <h2>2. What data Mad Trader collects</h2>
+    <p>Mad Trader itself does <strong>NOT</strong> collect, store, or transmit any of your personal or financial data to our servers. We have no servers.</p>
+    <p>However, the App integrates third-party SDKs (Firebase Crashlytics and PostHog Analytics now, and Google AdMob in a future update) that collect limited technical data as described in Section 4. This is standard for free apps and is disclosed in full below.</p>
+  </section>
 
-  <h2 id="s3">3. Your trading data — local storage</h2>
-  <p>All data you enter into Mad Trader — including capital amounts, trading results, P&amp;L entries, journal notes, strategies, and psychology tags — is stored exclusively on your device using a local SQLite database. This data:</p>
-  <ul>
-    <li>Never leaves your device unless you explicitly trigger a cloud backup (see Section 5)</li>
-    <li>Is never accessible to us or any third party</li>
-    <li>Can be exported as a JSON file at any time from Settings</li>
-    <li>Can be permanently deleted via Settings → Reset All Data</li>
-  </ul>
-  <p><strong>Photo Library (optional):</strong> If you choose to attach a chart screenshot to a journal entry, the App accesses your device's photo library so you can select an image. Selected images are copied into the App's private local storage only — they are never uploaded anywhere unless you separately trigger a Google Drive cloud backup. The App never accesses your photo library unless you explicitly tap "Add Image" on a journal entry.</p>
+  <section id="s3">
+    <h2>3. Your trading data — local storage</h2>
+    <p>All data you enter into Mad Trader — including capital amounts, trading results, P&amp;L entries, journal notes, strategies, and psychology tags — is stored exclusively on your device using a local SQLite database. This data:</p>
+    <ul>
+      <li>Never leaves your device unless you explicitly trigger a cloud backup (see Section 5)</li>
+      <li>Is never accessible to us or any third party</li>
+      <li>Can be exported as a JSON file at any time from Settings</li>
+      <li>Can be permanently deleted via Settings → Reset All Data</li>
+    </ul>
+    <h3>Photo Library (optional)</h3>
+    <p>If you choose to attach a chart screenshot to a journal entry, the App accesses your device's photo library so you can select an image. Selected images are copied into the App's private local storage only — they are never uploaded anywhere unless you separately trigger a Google Drive cloud backup. The App never accesses your photo library unless you explicitly tap "Add Image" on a journal entry.</p>
+  </section>
 
-  <h2 id="s4">4. Third-party services &amp; SDKs</h2>
-  <p>The App uses the following third-party services. Each collects data independently under their own privacy policies, linked below.</p>
+  <section id="s4">
+    <h2>4. Third-party services &amp; SDKs</h2>
+    <p>The App uses the following third-party services. Each collects data independently under their own privacy policies, linked below.</p>
 
-  <div class="service-block">
-    <div class="service-name">Google AdMob (Free users only — not yet active)</div>
-    <div class="service-meta">
-      <span>Active in: planned for free tier, not yet enabled</span>
-      <span class="warn">Will collect device data for ads once enabled</span>
-    </div>
+    <h3>Google AdMob (Free users only — not yet active)</h3>
+    <span class="tag">Active in: planned for free tier, not yet enabled</span>
     <p><strong>AdMob is not active in the current version of the App.</strong> This section describes how it will work once ads are enabled in a future update. Once active, free-tier users will see banner ads on the Dashboard and Settings screens. AdMob will collect:</p>
     <ul>
       <li>Device advertising ID (Android Ad ID)</li>
@@ -87,16 +195,11 @@
       <li>IP address (used to infer general location for ad targeting)</li>
       <li>App usage signals (which screens were viewed, when)</li>
     </ul>
-    <p>This data will be used to serve relevant advertisements. It is collected by Google LLC and governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You will be able to opt out of personalised ads at any time via your device's <strong>Settings → Privacy → Ads → Opt out of Ads Personalisation</strong>.</p>
+    <p>This data will be used to serve relevant advertisements. It is collected by Google LLC and governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. You will be able to opt out of personalised ads at any time via your device's <strong>Settings → Privacy → Ads → Opt out of Ads Personalisation</strong>.</p>
     <p><strong>Pro subscribers</strong> will see no ads once this is enabled.</p>
-  </div>
 
-  <div class="service-block">
-    <div class="service-name">Firebase Crashlytics (All users)</div>
-    <div class="service-meta">
-      <span>Active in: all tiers</span>
-      <span class="warn">Collects crash and stability data</span>
-    </div>
+    <h3>Firebase Crashlytics (All users)</h3>
+    <span class="tag">Active in: all tiers — collects crash and stability data</span>
     <p>Firebase Crashlytics helps us identify and fix app crashes. It collects:</p>
     <ul>
       <li>Crash logs and stack traces (code-level error details, not your trading data)</li>
@@ -104,15 +207,10 @@
       <li>A randomly generated installation UUID (not linked to your identity)</li>
       <li>Timestamp of the crash</li>
     </ul>
-    <p>Crashlytics does <strong>NOT</strong> collect your trading data, journal entries, capital amounts, or any financial information. All crash reports are anonymous. Data is collected by Google LLC and governed by <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase's Privacy Policy</a>.</p>
-  </div>
+    <p>Crashlytics does <strong>NOT</strong> collect your trading data, journal entries, capital amounts, or any financial information. All crash reports are anonymous. Data is collected by Google LLC and governed by <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's Privacy Policy</a>.</p>
 
-  <div class="service-block">
-    <div class="service-name">PostHog Analytics (All users)</div>
-    <div class="service-meta">
-      <span>Active in: all tiers</span>
-      <span class="warn">Collects feature-usage events</span>
-    </div>
+    <h3>PostHog Analytics (All users)</h3>
+    <span class="tag">Active in: all tiers — collects feature-usage events</span>
     <p>We use PostHog to understand which features are actually used, so we know what to improve. On each session it sends a small number of lightweight events:</p>
     <ul>
       <li><strong>app_opened</strong> — when the app is launched</li>
@@ -122,65 +220,76 @@
       <li><strong>backup_completed</strong> — whether a backup was local or cloud</li>
       <li><strong>upgrade_screen_viewed</strong> — that the Pro screen was opened</li>
     </ul>
-    <p>Each event is tied to a random ID generated on first install and stored only on your device — it is not your name, email, or Google account, and cannot be used to identify you personally. No trading data, journal text, capital amounts, or P&amp;L figures are ever sent. Governed by <a href="https://posthog.com/privacy" target="_blank">PostHog's Privacy Policy</a>.</p>
-  </div>
+    <p>Each event is tied to a random ID generated on first install and stored only on your device — it is not your name, email, or Google account, and cannot be used to identify you personally. No trading data, journal text, capital amounts, or P&amp;L figures are ever sent. Governed by <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's Privacy Policy</a>.</p>
 
-  <div class="service-block">
-    <div class="service-name">Google Sign-In &amp; Google Drive (Optional — user-initiated only)</div>
-    <div class="service-meta">
-      <span>Active in: opt-in only</span>
-    </div>
+    <h3>Google Sign-In &amp; Google Drive (Optional — user-initiated only)</h3>
+    <span class="tag">Active in: opt-in only</span>
     <p>See Section 5 for full details. Google Drive backup is only active if you choose to sign in with your Google account in Settings. Nothing is sent to Google Drive by default.</p>
-  </div>
+  </section>
 
-  <h2 id="s5">5. Optional cloud backup (Google Drive)</h2>
-  <p>Mad Trader offers an optional cloud backup feature powered by Google Drive. This is <strong>entirely opt-in</strong>. It is not enabled by default and requires you to manually sign in with your Google account from Settings → Cloud Backup.</p>
-  <p>If you enable cloud backup:</p>
-  <ul>
-    <li>Your trading plans, day rows, and journal entries are stored in a private <strong>AppData folder</strong> in your own Google Drive account</li>
-    <li>This AppData folder is hidden from your regular Drive view and only Mad Trader can read or write to it — not us, not any other app</li>
-    <li>You can restore your data or sign out (which ends the Drive connection) at any time from within the App</li>
-    <li>If you uninstall the App, the AppData backup is automatically deleted by Google along with the app's private storage</li>
-    <li>Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for the Drive/Sign-In portion of this feature</li>
-  </ul>
-  <p>If you never sign in with Google, no data is ever sent to Google Drive.</p>
+  <section id="s5">
+    <h2>5. Optional cloud backup (Google Drive)</h2>
+    <p>Mad Trader offers an optional cloud backup feature powered by Google Drive. This is <strong>entirely opt-in</strong>. It is not enabled by default and requires you to manually sign in with your Google account from Settings → Cloud Backup.</p>
+    <p>If you enable cloud backup:</p>
+    <ul>
+      <li>Your trading plans, day rows, and journal entries are stored in a private <strong>AppData folder</strong> in your own Google Drive account</li>
+      <li>This AppData folder is hidden from your regular Drive view and only Mad Trader can read or write to it — not us, not any other app</li>
+      <li>You can restore your data or sign out (which ends the Drive connection) at any time from within the App</li>
+      <li>If you uninstall the App, the AppData backup is automatically deleted by Google along with the app's private storage</li>
+      <li>Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for the Drive/Sign-In portion of this feature</li>
+    </ul>
+    <p>If you never sign in with Google, no data is ever sent to Google Drive.</p>
+  </section>
 
-  <h2 id="s6">6. Permissions</h2>
-  <p>Mad Trader explicitly blocks camera, location, contacts, and microphone access. The following permissions are requested only when you use related features:</p>
-  <ul>
-    <li><strong>Storage / Files:</strong> To export and import backup JSON files to/from your device</li>
-    <li><strong>Photos:</strong> Only if you choose to attach a chart screenshot to a journal entry. See Section 3.</li>
-    <li><strong>Notifications:</strong> Only if you turn on Daily Reminder, Journal Nudge, or Weekly Summary in Settings → Notifications. Off by default. All scheduling happens locally on your device — no data is sent anywhere to deliver these reminders.</li>
-    <li><strong>Internet:</strong> Required by Crashlytics (crash reports), PostHog (analytics events), optional Google Drive cloud backup, and AdMob once ads are enabled in a future update</li>
-  </ul>
-  <p>No other permissions are used.</p>
+  <section id="s6">
+    <h2>6. Permissions</h2>
+    <p>Mad Trader explicitly blocks camera, location, contacts, and microphone access. The following permissions are requested only when you use related features:</p>
+    <ul>
+      <li><strong>Storage / Files:</strong> To export and import backup JSON files to/from your device</li>
+      <li><strong>Photos:</strong> Only if you choose to attach a chart screenshot to a journal entry. See Section 3.</li>
+      <li><strong>Notifications:</strong> Only if you turn on Daily Reminder, Journal Nudge, or Weekly Summary in Settings → Notifications. Off by default. All scheduling happens locally on your device — no data is sent anywhere to deliver these reminders.</li>
+      <li><strong>Internet:</strong> Required by Crashlytics (crash reports), PostHog (analytics events), optional Google Drive cloud backup, and AdMob once ads are enabled in a future update</li>
+    </ul>
+    <p>No other permissions are used.</p>
+  </section>
 
-  <h2 id="s7">7. Financial disclaimer</h2>
-  <p>Mad Trader is a planning and tracking tool <strong>ONLY</strong>. It is not financial advice, a trading recommendation system, or a guarantee of returns. Compound projections are mathematical simulations only. Past projections do not guarantee future results. Trading in financial markets involves significant risk. You may lose some or all of your capital. Always consult a qualified financial advisor before making trading decisions.</p>
+  <section id="s7">
+    <h2>7. Financial disclaimer</h2>
+    <p>Mad Trader is a planning and tracking tool <strong>ONLY</strong>. It is not financial advice, a trading recommendation system, or a guarantee of returns. Compound projections are mathematical simulations only. Past projections do not guarantee future results. Trading in financial markets involves significant risk. You may lose some or all of your capital. Always consult a qualified financial advisor before making trading decisions.</p>
+  </section>
 
-  <h2 id="s8">8. Children's privacy</h2>
-  <p>Mad Trader is not directed toward children under the age of 13, and we do not knowingly collect personal information from children. If you believe a child has used this app and data has been collected, contact us immediately.</p>
-  <p>Separately, because the App deals with real financial planning and trading concepts, it is intended for users aged 18 and above.</p>
+  <section id="s8">
+    <h2>8. Children's privacy</h2>
+    <p>Mad Trader is not directed toward children under the age of 13, and we do not knowingly collect personal information from children. If you believe a child has used this app and data has been collected, contact us immediately.</p>
+    <p>Separately, because the App deals with real financial planning and trading concepts, it is intended for users aged 18 and above.</p>
+  </section>
 
-  <h2 id="s9">9. Your rights</h2>
-  <p>You have full control over your data:</p>
-  <ul>
-    <li><strong>Access:</strong> All your data is visible within the App at all times</li>
-    <li><strong>Export:</strong> Export everything as a JSON file via Settings → Backup</li>
-    <li><strong>Delete:</strong> Permanently delete all local data via Settings → Reset All Data</li>
-    <li><strong>Opt out of personalised ads:</strong> Android Settings → Privacy → Ads → Opt out of Ads Personalisation</li>
-    <li><strong>Cloud backup removal:</strong> Sign out of Google from Settings → Cloud Backup to disconnect the App from your Drive. Your backup is also automatically deleted by Google if you uninstall the App, since it lives in the App's private AppData folder.</li>
-  </ul>
+  <section id="s9">
+    <h2>9. Your rights</h2>
+    <p>You have full control over your data:</p>
+    <ul>
+      <li><strong>Access:</strong> All your data is visible within the App at all times</li>
+      <li><strong>Export:</strong> Export everything as a JSON file via Settings → Backup</li>
+      <li><strong>Delete:</strong> Permanently delete all local data via Settings → Reset All Data</li>
+      <li><strong>Opt out of personalised ads:</strong> Android Settings → Privacy → Ads → Opt out of Ads Personalisation</li>
+      <li><strong>Cloud backup removal:</strong> Sign out of Google from Settings → Cloud Backup to disconnect the App from your Drive. Your backup is also automatically deleted by Google if you uninstall the App, since it lives in the App's private AppData folder.</li>
+    </ul>
+  </section>
 
-  <h2 id="s10">10. Changes to this policy</h2>
-  <p>We may update this Privacy Policy when the App adds new features or third-party services. Updates will be reflected in new App versions and on this page. Continued use after changes constitutes acceptance of the updated policy.</p>
+  <section id="s10">
+    <h2>10. Changes to this policy</h2>
+    <p>We may update this Privacy Policy when the App adds new features or third-party services. Updates will be reflected in new App versions and on this page. Continued use after changes constitutes acceptance of the updated policy.</p>
+  </section>
 
-  <h2 id="s11">11. Contact</h2>
-  <p>For privacy questions, data requests, or any other queries, email us at <a href="mailto:askmadtrader@gmail.com">askmadtrader@gmail.com</a>, or use the Contact Support / Report a Bug screens inside the App (Settings → Support).</p>
+  <section id="s11">
+    <h2>11. Contact</h2>
+    <p>For privacy questions, data requests, or any other queries, email us at <a href="mailto:askmadtrader@gmail.com">askmadtrader@gmail.com</a>, or use the Contact Support / Report a Bug screens inside the App (Settings → Support).</p>
+  </section>
 
   <div class="footer">
-    Mad Trader v1.2.9 &nbsp;|&nbsp; Package: com.madtrader.app &nbsp;|&nbsp; Android API 24+ &nbsp;|&nbsp; © 2026 Mad Trader
+    Mad Trader v1.0.0 | Package: com.madtrader.app | Android API 24+ | © 2026 Mad Trader
   </div>
+
 </div>
 </body>
 </html>
