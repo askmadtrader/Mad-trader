@@ -1,183 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mad Trader — Privacy Policy</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0B1020; color: #E0E8FF; line-height: 1.7; }
-  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
-  .badge { display: inline-block; background: #00C85320; border: 1px solid #00C85340; color: #00C853; padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
-  .badge-warn { display: inline-block; background: #FF980020; border: 1px solid #FF980040; color: #FF9800; padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; margin-bottom: 28px; margin-left: 8px; }
-  h1 { font-size: 32px; font-weight: 800; color: #00E5FF; margin-bottom: 6px; }
-  .meta { color: #5A7099; font-size: 13px; margin-bottom: 20px; }
-  h2 { font-size: 17px; font-weight: 700; color: #FFFFFF; margin: 32px 0 10px; border-bottom: 1px solid #1E2D45; padding-bottom: 8px; }
-  h3 { font-size: 14px; font-weight: 700; color: #00E5FF; margin: 16px 0 6px; }
-  p, li { color: #9BB0CC; font-size: 15px; margin-bottom: 12px; }
-  ul { padding-left: 20px; margin-bottom: 12px; }
-  li { margin-bottom: 6px; }
-  code { background: #111827; border: 1px solid #1E2D45; border-radius: 4px; padding: 1px 6px; font-size: 13px; color: #00E5FF; }
-  .service-block { background: #111827; border: 1px solid #1E2D45; border-radius: 10px; padding: 14px 18px; margin-bottom: 14px; }
-  .service-name { font-size: 14px; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; }
-  .service-meta { font-size: 12px; color: #5A7099; margin-bottom: 8px; }
-  .service-meta span { color: #00C853; margin-right: 12px; }
-  .service-meta span.warn { color: #FF9800; }
-  .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #1E2D45; color: #5A7099; font-size: 12px; text-align: center; }
-  strong { color: #E0E8FF; }
-  a { color: #00E5FF; }
-  .toc { background: #111827; border: 1px solid #1E2D45; border-radius: 10px; padding: 16px 20px; margin-bottom: 32px; }
-  .toc p { font-size: 13px; color: #5A7099; margin-bottom: 6px; }
-  .toc a { display: block; font-size: 14px; color: #9BB0CC; margin-bottom: 4px; text-decoration: none; }
-  .toc a:hover { color: #00E5FF; }
-</style>
-</head>
-<body>
-<div class="container">
-  <h1>Privacy Policy</h1>
-  <p class="meta">Effective Date: June 2026 &nbsp;|&nbsp; Last Updated: July 2026</p>
-
-  <div class="badge">✓ Your trading data stays on your device</div>
-  <div class="badge-warn">⚠ Third-party SDKs &amp; billing in use — see Section 4</div>
-
-  <div class="toc">
-    <p>Contents</p>
-    <a href="#s1">1. Introduction</a>
-    <a href="#s2">2. What data Mad Trader collects</a>
-    <a href="#s3">3. Your trading data — local storage</a>
-    <a href="#s4">4. Third-party services &amp; SDKs</a>
-    <a href="#s5">5. Mad Trader Pro subscription</a>
-    <a href="#s6">6. Optional cloud backup (Google Drive)</a>
-    <a href="#s7">7. Permissions</a>
-    <a href="#s8">8. Financial disclaimer</a>
-    <a href="#s9">9. NSE holiday data</a>
-    <a href="#s10">10. Children's privacy</a>
-    <a href="#s11">11. Your rights</a>
-    <a href="#s12">12. Changes to this policy</a>
-    <a href="#s13">13. Contact</a>
-  </div>
-
-  <h2 id="s1">1. Introduction</h2>
-  <p>Mad Trader ("the App", "we", "our") is a personal trading compounding planner and journal developed for individual use. This Privacy Policy describes exactly what data is collected, by whom, and how it is used. By using Mad Trader, you agree to the terms of this Privacy Policy.</p>
-
-  <h2 id="s2">2. What data Mad Trader collects</h2>
-  <p>Mad Trader itself does <strong>NOT</strong> collect, store, or transmit any of your personal or financial data to our own servers. We have no backend servers.</p>
-  <p>The App integrates third-party SDKs — Firebase Crashlytics, PostHog Analytics, Google AdMob, and Google Play Billing — that collect limited technical data as described in Sections 4 and 5. This is standard for a free app with an optional paid tier, and is disclosed in full below.</p>
-
-  <h2 id="s3">3. Your trading data — local storage</h2>
-  <p>All data you enter into Mad Trader — capital amounts, P&amp;L, dates, notes, journal entries, and trading plans — is stored exclusively on your device using a local SQLite database.</p>
-  <p>This data never leaves your device unless you explicitly enable cloud backup (Section 6). It is never accessible to us or any third party. It can be exported as a JSON file at any time, and permanently deleted via Settings → Reset All Data.</p>
-  <p><strong>Photo library (optional):</strong> If you attach a chart screenshot to a journal entry, the selected image is compressed and copied into the App's private local storage only — it is never uploaded anywhere unless you separately enable Google Drive backup. Photo access is requested only at the moment you tap "Add Photo," never automatically, and you can deny it and still use every other feature of the App.</p>
-
-  <h2 id="s4">4. Third-party services &amp; SDKs</h2>
-  <p>The App uses the following third-party services. Each collects data independently under their own privacy policies, linked below.</p>
-
-  <div class="service-block">
-    <div class="service-name">Google AdMob (Free tier only)</div>
-    <div class="service-meta">
-      <span>Active in: free tier</span>
-      <span class="warn">Collects device data for ads</span>
-    </div>
-    <p>Free-tier users see banner ads. AdMob collects your advertising ID, device model, OS version, screen size, and IP address (used to infer general location) for ad targeting. Governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. Opt out of personalised ads via your device's <strong>Settings → Privacy → Ads → Opt out of Ads Personalisation</strong>.</p>
-    <p><strong>Pro subscribers</strong> see no ads. AdMob is not active for Pro users.</p>
-  </div>
-
-  <div class="service-block">
-    <div class="service-name">Firebase Crashlytics (All users)</div>
-    <div class="service-meta">
-      <span>Active in: all tiers</span>
-      <span class="warn">Collects crash and stability data</span>
-    </div>
-    <p>Collects anonymous crash logs and stack traces, device model, OS version, app version, a randomly generated installation UUID, and the crash timestamp — to help us fix bugs. Does <strong>NOT</strong> collect your trading data, journal entries, or any personal identifiers. Governed by <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase's Privacy Policy</a>.</p>
-  </div>
-
-  <div class="service-block">
-    <div class="service-name">PostHog Analytics (All users)</div>
-    <div class="service-meta">
-      <span>Active in: all tiers</span>
-      <span class="warn">Collects anonymous usage events</span>
-    </div>
-    <p>Collects lightweight, anonymous usage events (e.g. "plan created," "journal entry added," "app opened") tied to a random device ID generated and stored locally on your device — not your name, email, or trading figures. No prices, P&amp;L, or notes are ever sent. Used only to understand which features are used so we can improve the App. Governed by <a href="https://posthog.com/privacy" target="_blank">PostHog's Privacy Policy</a>.</p>
-  </div>
-
-  <div class="service-block">
-    <div class="service-name">Google Play Billing (Pro subscribers only)</div>
-    <div class="service-meta">
-      <span>Active in: Pro purchase flow</span>
-    </div>
-    <p>Processes your Mad Trader Pro subscription payment. We never see or store your card, UPI, or other payment details — that is handled entirely by Google Play. We only receive confirmation that a subscription is active, via a purchase token stored locally on your device. See Section 5 for full subscription details.</p>
-  </div>
-
-  <div class="service-block">
-    <div class="service-name">Google Sign-In &amp; Google Drive (Optional — user-initiated only)</div>
-    <div class="service-meta">
-      <span>Active in: opt-in only</span>
-    </div>
-    <p>See Section 6 for full details. This is only active if you choose to sign in with Google to enable cloud backup. Nothing is sent to Google Drive by default.</p>
-  </div>
-
-  <h2 id="s5">5. Mad Trader Pro subscription</h2>
-  <p>Mad Trader Pro (₹599/year) unlocks unlimited plans, unlimited journal entries, cloud backup, PDF export, Excel export, and an ad-free experience. Analytics &amp; charts are free for all users regardless of tier.</p>
-  <ul>
-    <li><strong>Billing:</strong> Handled entirely by Google Play Billing. Mad Trader has no backend server and never processes payments directly.</li>
-    <li><strong>Auto-renewal:</strong> The subscription automatically renews each year at ₹599 unless cancelled at least 24 hours before the renewal date, per standard Google Play subscription terms.</li>
-    <li><strong>Cancel anytime:</strong> Go to Settings → Manage Subscription, or directly via the Google Play Store app → Profile → Payments &amp; subscriptions → Subscriptions.</li>
-    <li><strong>Refunds:</strong> Governed entirely by Google Play's refund policy. We do not process refunds directly — please contact Google Play support or use Google Play's own refund request flow.</li>
-    <li><strong>Restoring a purchase:</strong> If you reinstall the App or switch devices, sign in to Play Store with the same Google account that purchased Pro — your subscription is detected and restored automatically. A manual "Restore Purchases" option is also available on the Upgrade screen.</li>
-  </ul>
-
-  <h2 id="s6">6. Optional cloud backup (Google Drive)</h2>
-  <p>Cloud backup via Google Drive is <strong>entirely opt-in</strong>. It is not enabled by default and requires you to sign in with Google in Settings → Cloud Backup.</p>
-  <p>If you sign in with Google:</p>
-  <ul>
-    <li>Google Sign-In shares your account's <strong>name, email address, and profile photo</strong> with the App, so we can show which account is connected</li>
-    <li>Your data is stored in a private <code>AppData</code> folder in your Google Drive — hidden from your regular Drive view, so only Mad Trader can read or write to it</li>
-    <li>The App only requests the narrow <code>drive.appdata</code> permission scope — it cannot see, read, or modify any other files in your Google Drive</li>
-    <li>Data is transmitted securely over HTTPS directly to Google's servers; we do not operate any backup server ourselves</li>
-    <li>The backup is automatically deleted if you uninstall the app</li>
-    <li>You can restore your data or sign out at any time from Settings</li>
-  </ul>
-  <p>If you never sign in with Google, no account data or backup is ever created or transmitted.</p>
-
-  <h2 id="s7">7. Permissions</h2>
-  <p>Mad Trader explicitly blocks camera, location, contacts, and microphone access. The following permissions are requested only when needed:</p>
-  <ul>
-    <li><strong>Storage / Files:</strong> To export and import local backup JSON files</li>
-    <li><strong>Photos:</strong> Only if you choose to attach a chart screenshot to a journal entry</li>
-    <li><strong>Notifications:</strong> Only if you turn on reminders in Settings → Notifications. Off by default. All scheduling happens locally on your device — no data is sent anywhere to deliver these reminders.</li>
-    <li><strong>Internet:</strong> Required by Crashlytics (crash reports), PostHog (analytics events), optional Google Drive backup, AdMob (Free tier ads), and Google Play Billing (Pro subscription)</li>
-  </ul>
-  <p>No other permissions are used.</p>
-
-  <h2 id="s8">8. Financial disclaimer</h2>
-  <p>Mad Trader is a planning and tracking tool <strong>ONLY</strong>. It is NOT financial advice, a trading recommendation system, or a guarantee of returns. Compound projections are mathematical simulations only. Past projections do not guarantee future results. Trading in financial markets involves significant risk. You may lose some or all of your capital. Always consult a qualified financial advisor before making trading decisions.</p>
-
-  <h2 id="s9">9. NSE holiday data</h2>
-  <p>The App contains pre-loaded NSE (National Stock Exchange of India) holidays for 2025–2030. This data is embedded in the App and does not require an internet connection. Always verify the official NSE calendar before trading.</p>
-
-  <h2 id="s10">10. Children's privacy</h2>
-  <p>Mad Trader is not directed toward children under the age of 13, and we do not knowingly collect personal information from children. Because the App deals with real financial planning and trading concepts, it is intended for users aged 18 and above.</p>
-
-  <h2 id="s11">11. Your rights</h2>
-  <p>You have full control over your data:</p>
-  <ul>
-    <li><strong>Access:</strong> All data is visible within the App at all times</li>
-    <li><strong>Export:</strong> Export everything as a JSON file via Settings → Backup</li>
-    <li><strong>Delete:</strong> Permanently delete all local data via Settings → Reset All Data</li>
-    <li><strong>Opt out of personalised ads:</strong> Android Settings → Privacy → Ads → Opt out of Ads Personalisation</li>
-    <li><strong>Cloud backup removal:</strong> Sign out of Google from Settings → Cloud Backup</li>
-    <li><strong>Manage or cancel Pro subscription:</strong> Settings → Manage Subscription</li>
-  </ul>
-
-  <h2 id="s12">12. Changes to this policy</h2>
-  <p>We may update this Privacy Policy when the App adds new features or third-party services. Updates will be reflected in new App versions and on this hosted page. Continued use after changes constitutes acceptance of the updated policy.</p>
-
-  <h2 id="s13">13. Contact</h2>
-  <p>For privacy questions, data requests, or any other queries, email us at <a href="mailto:askmadtrader@gmail.com">askmadtrader@gmail.com</a>, or use the Contact Support / Report a Bug screens inside the App (Settings → Support).</p>
-
-  <div class="footer">
-    Mad Trader v1.0.1 &nbsp;|&nbsp; Package: com.madtrader.app &nbsp;|&nbsp; Platform: Android (API 24+) &nbsp;|&nbsp; © 2026 Mad Trader
-  </div>
-</div>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TradeBit Privacy Policy</title>
+<style>body{font-family:system-ui,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.65;color:#1b1d26}h1{margin-bottom:4px}h2{margin-top:28px;font-size:1.1rem}.u{color:#6b6f7d}a{color:#8a6a1f}</style></head><body>
+<h1>TradeBit Privacy Policy</h1><p class="u">Last updated: October 2, 2026</p>
+<h2>1. Introduction</h2>
+<p>This Privacy Policy explains how the TradeBit mobile app ("TradeBit", "the app", "we") handles information. TradeBit is published by an independent developer and is a planning, journaling and market-news tool for trading. It is not a brokerage or trading platform.</p>
+<p>In short: your plans and records stay on your device. We do not operate any server that receives your data, we do not require an account, and we do not collect, sell, rent or share your personal information. The app does connect to the internet to download public news headlines (see section 4).</p>
+<h2>2. Information stored on your device</h2>
+<p>To work, the app stores the following only in its private storage on your device:</p>
+<ul><li>Plans you create: plan name, market type, currency, starting capital, target percentage, duration and start date.</li><li>Daily or monthly records: dates, your entered percentage results, calculated capital figures, status (profit, loss, break-even, skipped) and notes you type.</li><li>Optional profile name you choose to enter.</li><li>App preferences: light or dark theme and calendar settings.</li></ul>
+<p>This information is created by you, stays on your device, and is not transmitted to us or anyone else by the app.</p>
+<h2>3. Information we do not collect</h2>
+<p>We do not collect or receive: your name or email address (unless you choose to email support), phone number, precise or approximate location, contacts, photos, files, microphone or camera data, advertising ID, device identifiers, financial account or payment details, or usage analytics.</p>
+<p>TradeBit does not connect to your bank, broker or trading account, and it never asks for passwords or card numbers.</p>
+<h2>4. Permissions and network use</h2>
+<p>TradeBit does not request any sensitive Android permissions (such as contacts, location, camera, microphone or storage). It uses the standard internet permission for one purpose only: the News tab downloads public headlines from news publishers' RSS feeds (for example Economic Times, Moneycontrol, Mint, Business Standard, BusinessLine, CNBC and BBC) and from the public feeds of official bodies (the Reserve Bank of India and the US Federal Reserve).</p>
+<p>When the app requests these feeds, the publisher's server can see technical information that any internet request includes, such as your IP address and device/app type, and handles it under its own privacy policy. The app does not send your plans, records, notes, profile name or any other personal data in these requests, and we do not receive them.</p>
+<p>The downloaded headlines are saved on your device so the list can be shown without re-downloading. Tapping a headline opens the article in your browser on the publisher's website, which is governed by that publisher's policies.</p>
+<h2>5. Advertising, analytics and third-party SDKs</h2>
+<p>TradeBit contains no advertising, no analytics, no crash-reporting service and no third-party tracking SDKs. We do not use your data for advertising or profiling.</p>
+<h2>6. Sharing of information</h2>
+<p>We do not sell, rent, trade or share your information with anyone.</p>
+<p>The only ways information leaves the app are actions you start yourself or the news download described above:</p>
+<ul><li>News tab: the app contacts the news publishers' public feeds to download headlines. No personal data from the app is included.</li><li>Opening a headline: opens the publisher's website in your browser.</li><li>Contact support: opens your email app with a pre-filled message to asktradebit@gmail.com. You decide whether to send it.</li><li>Share app: shares a link to the app's Google Play page.</li></ul>
+<h2>7. Device backups and Google Play</h2>
+<p>If automatic backup is turned on for your Android device, Android may include app data in a backup stored in your Google account, under Google's terms and privacy policy. We have no access to such backups. You can manage this in your device's Google settings.</p>
+<p>Installing the app from Google Play is also subject to Google's own privacy practices, which we do not control.</p>
+<h2>8. Data retention and deletion</h2>
+<p>Your data stays on your device until you remove it. You can delete it at any time:</p>
+<ul><li>In the app: Settings &gt; Your data &gt; Delete all data permanently erases every plan, record, note, your profile name and the saved news list.</li><li>Delete a single plan from the Plans screen.</li><li>Uninstalling the app removes all locally stored data.</li></ul>
+<p>Because we hold no copy of your data, we cannot recover it once deleted. The app has no user accounts, so there is no separate account to delete.</p>
+<h2>9. Security</h2>
+<p>Your data is kept in the app's private sandbox, which other apps cannot normally access. We do not add extra encryption inside the app, so we recommend protecting your device with a screen lock and keeping it up to date.</p>
+<h2>10. Children's privacy</h2>
+<p>TradeBit is intended for adults aged 18 and over and is not directed at children. We do not knowingly collect information from children under 13 (or any higher minimum age required in your country).</p>
+<h2>11. Your rights</h2>
+<p>Because your data is stored only on your device, you already have full control: you can view it in the app and delete it at any time. If you have questions about your privacy or a request under the laws that apply to you, email us and we will respond.</p>
+<h2>12. Changes to this policy</h2>
+<p>We may update this policy when the app changes. The latest version is always available in the app at Settings &gt; Legal &gt; Privacy Policy and on our Google Play listing, and the "Last updated" date will change.</p>
+<h2>13. Contact us</h2>
+<p>Email: <a href="mailto:asktradebit@gmail.com">asktradebit@gmail.com</a></p>
+</body></html>
